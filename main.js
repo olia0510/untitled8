@@ -38,79 +38,7 @@ console.log(num)
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 // Взяти масив цей  User[] та: Відфільтрувати , залишивши тільки об'єкти з парними id (filter) та Відсортувати його по id. по зростанню (sort)
 
-let Users = [
-    {
-        id: 1,
-        name: 'Olia',
-        surname: 'Baralo',
-        email: 'Olia@gmail.com',
-        phone: '0932574587'
-    },
-    {
-        id: 2,
-        name: 'Tania',
-        surname: 'Nogko',
-        email: 'Tania@gmail.com',
-        phone: '0968754952'
-    },
-    {
-        id: 3,
-        name: 'Roman',
-        surname: 'Kashpo',
-        email: 'Roma@gmail.com',
-        phone: '0678549687'
-    },
-    {
-        id: 4,
-        name: 'Svitlana',
-        surname: 'Boichuk',
-        email: 'Sveta@gmail.com',
-        phone: '668549674'
-    },
-    {
-        id: 5,
-        name: 'Kurulo',
-        surname: 'Stasiy',
-        email: 'Kiril@gmail.com',
-        phone: '0658754121'
-    },
-    {
-        id: 6,
-        name: 'Vlad',
-        surname: 'Haryk',
-        email: 'Vladik@gmail.com',
-        phone: '0674581263'
-    },
-    {
-        id: 7,
-        name: 'Natalia',
-        surname: 'Zamko',
-        email: 'Natali@gmail.com',
-        phone: '0965871247'
-    },
-    {
-        id: 8,
-        name: 'Dmutro',
-        surname: 'Bukov',
-        email: 'Dimon@gmail.com',
-        phone: '0632578246'
-    },
-    {
-        id: 9,
-        name: 'Illia',
-        surname: 'Ferun',
-        email: 'Ilusha@gmail.com',
-        phone: '0443657854'
-    },
-    {
-        id: 10,
-        name: 'Jaroslav',
-        surname: 'stafichuk',
-        email: 'Jarik@gmail.com',
-        phone: '0675284691'
-    }
 
-    ];
 class User {
     constructor(id, name, surname, email, phone) {
         this.id = id
@@ -121,8 +49,18 @@ class User {
     }
 }
 
-// console.log(Users)
-// id.sort(function (a,b){
-//     return a-b;
-// });
-// console.log (id)
+const olia = new User('1','Olia', 'Baralo', 'Olia@gmail.com', '0932574587');
+const tania = new User('2', 'Tania', 'Nogko','Tania@gmail.com', '0968754952');
+const roma = new User('3', 'Roman', 'Kashpo', 'Roma@gmail.com', '0678549687');
+const sveta = new User('4', 'Svitlana', 'Boichuk', 'Sveta@gmail.com', '668549674');
+const kiril = new User('5', 'Kurulo', 'Stasiy', 'Kiril@gmail.com', '0658754121');
+const vladik = new User('6', 'Vlad', 'Haryk', 'Vladik@gmail.com', '0674581263');
+const natasha = new User('7', 'Natalia', 'Zamko', 'Natali@gmail.com', '0965871247');
+const dima = new User('8', 'Dmutro', 'Bukov', 'Dimon@gmail.com', '0632578246');
+const ilysha = new User('9', 'Illia', 'Ferun', 'Ilusha@gmail.com', '0443657854');
+const jarik = new User('10', 'Jaroslav', 'stafichuk', 'Jarik@gmail.com', '0675284691')
+
+//     us=User.filter(function (id) {
+//         return id %2==0;
+//     })
+// console.log(us)
